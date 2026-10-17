@@ -79,7 +79,7 @@ function Home() {
                 <div className="lg:col-span-6 flex justify-center lg:justify-end">
                     <div className="w-full max-w-135 xl:max-w-150 h-120 sm:h-140 xl:h-160 rounded-[16px] bg-[#C7C7C7] overflow-hidden relative flex items-end justify-center">
                         <img
-                        src="/src/assets/IMG_2556.JPG"
+                        src="/src/assets/project-1.JPG"
                         alt="Portrait of Robert Garcia smiling in a brown crewneck sweater"
                         loading="lazy"
                         decoding="async"
