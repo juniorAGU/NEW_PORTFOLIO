@@ -1,6 +1,8 @@
 import React from 'react'
 import { motion } from 'motion/react'
 import { projects } from '../api/api'
+import { useState } from 'react';
+import { ProjectDescription } from '@/components/Projectdescription';
 
 const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -26,6 +28,7 @@ const slideFromRight = {
 };
 
 function Work() {
+
     return (
         <section className='  w-full min-h-screen max-w-360 mx-auto px-6  sm:px-10 lg:px-8 pt-4 pb-12 lg:py-8'>
             <motion.article 
@@ -84,7 +87,7 @@ function Work() {
 
                             {project.description && (
                                 <p className="font-sans mt-4 text-[16px] sm:text-[15px] leading-normal text-[#C7C7C7]">
-                                {project.description}
+                                    <ProjectDescription text={project.description}/>
                                 </p>
                             )}
 

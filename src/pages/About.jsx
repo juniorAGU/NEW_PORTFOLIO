@@ -124,7 +124,7 @@ const slideFromLeft = {
                 >
                 <div className="relative aspect-16/10 w-full max-w-5xl overflow-hidden rounded-xl bg-neutral-300">
                     <img
-                    src="https://unsplash.com"
+                    src="/abouti-image.JPG"
                     alt="Portrait of Robert Garcia"
                     loading="lazy"
                     className="h-full w-full object-cover object-center"
