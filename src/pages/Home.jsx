@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion} from 'motion/react'
+import { Link } from 'react-router-dom';
 
 const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -28,14 +29,13 @@ function Home() {
 
                     <div className="mt-8 sm:mt-10 flex items-center gap-4">
                     {/* Primary Pill CTA */}
-                        <button
-                            type="button"
-                            onClick={() => setActiveModal('contact')}
+                        <Link
+                            to={'contact'}
                             className="group h-13.5 pl-6 pr-5 rounded-full bg-linear-to-l from-[#D8F25F] to-[#22C55E] hover:opacity-90 active:scale-[0.99] text-[#0A0A0A] font-sans font-bold text-[15px] sm:text-[16px] leading-none uppercase flex items-center gap-6 transition-all duration-150 cursor-pointer whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D3E97A]"
                         >
                             <span>CONTACT ME</span>
                             <span className="w-2.5 h-2.5 rounded-full bg-[#0A0A0A] transition-transform duration-150 group-hover:scale-125" />
-                        </button>
+                        </Link>
 
                         {/* LinkedIn Circular Icon Button */}
                         <a
